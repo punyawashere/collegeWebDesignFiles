@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form One</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .left-form input{
+            width: 15vw;
+            height: 2vw;
+            margin-bottom: 15px;
+            margin-left: 14px;
+        }
+        .right input{
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main" style="width: 100%; display: flex; gap:10px;margin-top: 15px;">
+        <!-- left -->
+        <div class="left" style="width: 50%; padding: 80px;background-color: #a1f542;">
+
+            <div class="left-background" style="background-color: white; width: 70%;display: flex; flex-direction: column; align-items: center; margin-left: 70px; box-shadow: 1px 1px 2px;">
+
+                <div class="left-form" style="padding: 5px; width: 70%; ">
+                    <h1 style="text-align: center; font-size: 1.4vw; margin-bottom: 10px;">LOGIN</h1>
+                    <h3 style="text-align: center; font-size: 1vw; margin-bottom: 10px;">Please enter your Credential to login</h3>
+                    <form>
+                        <input type="username" name="username" placeholder="username"><br>
+                        <input type="password" name="password" placeholder="password"><br>
+
+                        <button style="border: none; background-color: #8fd93b; color: white; width: 15vw; height: 2vw;  margin-left: 14px;margin-bottom: 10px;">LOGIN</button>
+                        <p style="text-align: center;">Not registered ? <a href="#">Create an account</a></p>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- right -->
+        <div class="right" style="width: 50%; padding: 80px;background-color: grey;">
+
+            <div class="right-background" style="background-color: #1d3d1a; width: 70%;display: flex; flex-direction: column; align-items: center; margin-left: 70px;  color: white;">
+
+                <div class="right-form" style="margin-top: 10px; width: 80%; ">
+                    <div class="right-buttons" style="width: 100%; display: flex;">
+                        <button style="width: 50%; background-color: #a1f542; border: none; height: 30px;" >Sign Up</button>
+                        <button style="width: 50%; background-color: grey; border: none; height: 30px;" >Log In</button>
+
+                    </div>
+                    <h3 style="text-align: center; font-size: 1vw; margin-top: 10px;margin-bottom: 10px;">Sign Up for Free</h3>
+                    <form>
+                        <input type="text" name="first-name" placeholder="First Name*" style="width: 50%;height: 30px; border: 1px solid white; background-color: transparent; border-radius: 3px;margin-right: 10px;">
+                        <input type="text" name="Last-name" placeholder="Last Name*" style="width: 45%;height: 30px; border: 1px solid white; background-color: transparent; border-radius: 3px;">
+
+                        <input type="Email" name="email-address" placeholder="Email Address*" style="width: 100%;height: 30px; border: 1px solid white; background-color: transparent; border-radius: 3px;">
+
+                        <input type="password" name="set-password" placeholder="Set A Password*" style="width: 100%;height: 30px; border: 1px solid white; background-color: transparent; border-radius: 3px;">
+
+                        <button style="border: none; background-color: #a1f542; color: white; width: 100%; height: 2vw;  margin-bottom: 10px;">GET STARTED</button>
+                        
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
