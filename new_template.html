@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .content{
+            height: 200px;
+            width: 100%;
+            position: relative;
+            display: flex;
+            border: 3px solid;
+        }
+        content img{
+            height: 100%;
+            width: 100%;
+            border-bottom: 2px solid green;
+        }
+        .overlay{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background-color: rgba(49, 48, 48, 0.6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 35px;
+            font-weight: 800;
+            word-spacing: 2px;
+        }
+        .main{
+            width: calc(100% - 16px);
+            height: 400px;
+            text-align: center;
+            margin: 5px 8px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            padding: 60px;
+            
+        }
+    
+        .main .sub{
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            padding: 5px;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .main .sub .border{width: 100%;height: 100%;display: block;border-radius: 50%;overflow: hidden;}
+        .main .sub .border img{height: 100%;width: 100%;}
+        .image_content{
+            width: 100%;
+            float: left;
+        }
+        .image_content h3 span{
+            padding: 0px 10px;
+        }
+        /*.image_content h4{
+            margin: 0px;
+            padding: 0px;
+        }*/
+        h3,h4{
+            margin: 0;
+        }
+        .image_content h4 span{
+            display: inline-block;
+        }
+        .icon_1 span{
+            background-color: teal;
+            color: white;
+            padding: 4px;
+            font-size: 10px;
+        }
+        .icon_2 span{
+            background-color: green;
+            color: white;
+            padding: 4px;
+            font-size: 10px;
+        }
+        .icon_3 span{
+            background-color: orange;
+            color: white;
+            padding: 4px;
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <img src="team.jpg" alt="photo" height="200px" width="100%">
+        <div class="overlay">
+            Meet Our Team
+        </div>
+    </div>
+    <div class="w3-row w3-center">
+        <div class="w3-col l4">
+            <div class="main" style=" border-top: 5px solid teal;">
+                 <div class="sub" style="border:3px solid teal;">
+                    <span class="border w3-teal">
+                       <img src="photo1.jpeg">
+                    </span>
+                </div>
+                <div class="image_content">
+                    <h3 class="w3-center"><span class="w3-teal">LISA MAHETA</span></h3>
+                    <h4 class="w3-text-gray">
+                        <span>
+                            MARKETING
+                            <hr style="border: 1px solid teal; margin: 5px;">
+                        </span>
+                    </h4>
+                    <p class="w3-small w3-text-grey">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                    <div class="icon_1" style="margin-top: 15px;">  
+                        <span><i class="fa-brands fa-square-facebook"></i></span>
+                        <span><i class="fa-brands fa-twitter"></i></span>
+                        <span><i class="fa-brands fa-google-plus-g"></i></span>
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                    </div>
+                </div>        
+            </div> 
+        </div>
+        <div class="w3-col l4">
+            <div class="main" style=" border-top: 5px solid green;">
+                 <div class="sub" style="border:3px solid green;">
+                    <span class="border w3-green">
+                       <img src="photo2.jpeg" height="100%" width="100%" >
+                    </span>
+                </div>
+                <div class="image_content">
+                    <h3 class="w3-center"><span class="w3-green">JOHN MAKER</span></h3>
+                    <h4 class="w3-text-gray">
+                        <span>
+                            DESIGNER
+                            <hr style="border: 1px solid green; margin: 5px;">
+                        </span>
+                    </h4>
+                    <p class="w3-small w3-text-grey">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                    <div class="icon_2" style="margin-top: 15px;">  
+                        <span><i class="fa-brands fa-square-facebook"></i></span>
+                        <span><i class="fa-brands fa-twitter"></i></span>
+                        <span><i class="fa-brands fa-google-plus-g"></i></span>
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                    </div>
+                </div>        
+            </div>
+          
+        </div>
+        <div class="w3-col l4">
+            <div class="main" style=" border-top: 5px solid orange;">
+                 <div class="sub" style="border:3px solid orange;">
+                    <span class="border w3-orange">
+                       <img src="photo3.jpeg" height="100%" width="100%" >
+                    </span>
+                </div>
+                <div class="image_content">
+                    <h3 class="w3-center"><span class="w3-orange w3-text-white">VIN DIASEL</span></h3>
+                    <h4 class="w3-text-gray">
+                        <span>
+                            PRODUCTURE
+                            <hr style="border: 1px solid orange; margin: 5px;">
+                        </span>
+                    </h4>
+                    <p class="w3-small w3-text-grey">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                    <div class="icon_3" style="margin-top: 15px;">  
+                        <span><i class="fa-brands fa-square-facebook"></i></span>
+                        <span><i class="fa-brands fa-twitter"></i></span>
+                        <span><i class="fa-brands fa-google-plus-g"></i></span>
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                    </div>
+                </div>        
+            </div>
+          
+        </div>   
+    </div>
+    
+</body>
+</html>
